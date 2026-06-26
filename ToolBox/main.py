@@ -142,6 +142,27 @@ TOOLS = [
         "path": r"G:\hermesMy\RegexTester",
         "color": "#9c27b0",
     },
+    {
+        "name": "ScreenshotTool",
+        "emoji": "📸",
+        "description": "截图工具\n全屏/区域/窗口截图/标注/模糊",
+        "path": r"G:\hermesMy\ScreenshotTool",
+        "color": "#00bcd4",
+    },
+    {
+        "name": "TimerTools",
+        "emoji": "⏰",
+        "description": "计时器工具箱\n倒计时/秒表/世界时钟/番茄钟/闹钟",
+        "path": r"G:\hermesMy\TimerTools",
+        "color": "#ff5722",
+    },
+    {
+        "name": "CryptoTools",
+        "emoji": "🔒",
+        "description": "加密工具箱\n文本加密/文件加密/哈希/密码生成/JWT",
+        "path": r"G:\hermesMy\CryptoTools",
+        "color": "#607d8b",
+    },
 ]
 
 # ─── Stylesheet ───

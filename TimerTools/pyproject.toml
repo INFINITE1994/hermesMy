@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "TimerTools"
+version = "1.0.0"
+description = "TimerTools - 计时工具箱：一款功能丰富的计时器与闹钟工具箱桌面应用程序"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Hermes Agent", email = "hermes@nousresearch.com" }
+]
+keywords = ["timer", "clock", "pomodoro", "alarm", "stopwatch", "meeting-planner"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business :: Scheduling",
+    "Topic :: Utilities",
+]
+
+dependencies = [
+    "PyQt6>=6.4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/nousresearch/timer-tools"
+
+[project.scripts]
+timer-tools = "main:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

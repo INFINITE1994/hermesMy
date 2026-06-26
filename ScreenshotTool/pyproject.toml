@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "ScreenshotTool"
+version = "1.0.0"
+description = "专业截图工具 - 支持全屏、区域、窗口截图，标注、模糊、取色等功能"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "ScreenshotTool Team"}
+]
+dependencies = [
+    "PyQt6>=6.5.0",
+    "Pillow>=10.0.0",
+    "pynput>=1.7.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pyinstaller>=6.0.0",
+]
+
+[project.scripts]
+screenshot-tool = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
