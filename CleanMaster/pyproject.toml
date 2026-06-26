@@ -1,0 +1,20 @@
+[project]
+name = "cleanmaster"
+version = "1.0.0"
+description = "A lightweight Windows system cleanup tool"
+authors = [{name = "INFINITE1994"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "PyQt6>=6.5",
+    "psutil>=5.9",
+    "send2trash>=1.8",
+]
+
+[project.gui-scripts]
+cleanmaster = "CleanMaster.main:main"
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
