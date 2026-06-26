@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "FontManager"
+version = "1.0.0"
+description = "专业字体管理工具 - 浏览、预览、比较和管理系统字体"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "PyQt6>=6.5.0",
+    "PyQt6-Qt6>=6.5.0",
+    "PyQt6-sip>=13.5.0",
+]
+
+[project.scripts]
+fontmanager = "main:main"
+
+[project.optional-dependencies]
+dev = [
+    "pyinstaller>=6.0",
+]

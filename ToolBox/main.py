@@ -289,6 +289,27 @@ TOOLS = [
         "path": r"G:\hermesMy\AutomationTool",
         "color": "#ff5722",
     },
+    {
+        "name": "FontManager",
+        "emoji": "🔤",
+        "description": "字体管理器\n字体浏览/预览/比较/分类/导出",
+        "path": r"G:\hermesMy\FontManager",
+        "color": "#9c27b0",
+    },
+    {
+        "name": "DiskBenchmark",
+        "emoji": "⚡",
+        "description": "磁盘测速\n顺序/随机/混合读写/块大小/队列深度测试",
+        "path": r"G:\hermesMy\DiskBenchmark",
+        "color": "#ff9800",
+    },
+    {
+        "name": "SystemCleaner",
+        "emoji": "🛡️",
+        "description": "系统优化\n启动项/服务/注册表/驱动/内存/网络/隐私清理",
+        "path": r"G:\hermesMy\SystemCleaner",
+        "color": "#4caf50",
+    },
 ]
 
 # ─── Stylesheet ───
