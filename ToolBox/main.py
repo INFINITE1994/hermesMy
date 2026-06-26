@@ -184,6 +184,27 @@ TOOLS = [
         "path": r"G:\hermesMy\SystemInfo",
         "color": "#2196f3",
     },
+    {
+        "name": "EmojiPicker",
+        "emoji": "😀",
+        "description": "Emoji选择器\n搜索/分类/收藏/最近使用",
+        "path": r"G:\hermesMy\EmojiPicker",
+        "color": "#ffc107",
+    },
+    {
+        "name": "WeatherApp",
+        "emoji": "🌤️",
+        "description": "天气预报\n实时天气/7天预报/空气质量/日出日落",
+        "path": r"G:\hermesMy\WeatherApp",
+        "color": "#03a9f4",
+    },
+    {
+        "name": "Translator",
+        "emoji": "🌍",
+        "description": "翻译工具\n多语言翻译/自动检测/历史记录/批量翻译",
+        "path": r"G:\hermesMy\Translator",
+        "color": "#8bc34a",
+    },
 ]
 
 # ─── Stylesheet ───

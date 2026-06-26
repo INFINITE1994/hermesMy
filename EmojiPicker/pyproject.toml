@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "EmojiPicker"
+version = "1.0.0"
+description = "桌面 Emoji 选择器 - 搜索、分类、收藏、最近使用"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "PyQt6>=6.5",
+    "pyperclip>=1.8",
+]
+
+[project.scripts]
+emoji-picker = "main:main"
