@@ -226,6 +226,27 @@ TOOLS = [
         "path": r"G:\hermesMy\DownloadManager",
         "color": "#4caf50",
     },
+    {
+        "name": "WiFiTools",
+        "emoji": "📶",
+        "description": "WiFi工具\nWiFi扫描/信号强度/密码查看/速度测试",
+        "path": r"G:\hermesMy\WiFiTools",
+        "color": "#00bcd4",
+    },
+    {
+        "name": "ProcessManager",
+        "emoji": "⚙️",
+        "description": "进程管理器\n进程列表/进程树/资源监控/服务管理",
+        "path": r"G:\hermesMy\ProcessManager",
+        "color": "#ff5722",
+    },
+    {
+        "name": "FileConverter",
+        "emoji": "🔄",
+        "description": "文件转换器\n图片/文档/音频/视频/压缩包格式转换",
+        "path": r"G:\hermesMy\FileConverter",
+        "color": "#9c27b0",
+    },
 ]
 
 # ─── Stylesheet ───

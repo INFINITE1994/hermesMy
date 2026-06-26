@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "wifitools"
+version = "1.0.0"
+description = "专业的WiFi管理工具 - 扫描、分析、管理WiFi网络"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "WiFiTools Team"}
+]
+dependencies = [
+    "PyQt6>=6.5.0",
+    "psutil>=5.9.0",
+]
+
+[project.scripts]
+wifitools = "main:main"
+
+[project.gui-scripts]
+wifitools-gui = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
