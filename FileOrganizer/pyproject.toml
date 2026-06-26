@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "file-organizer"
+version = "1.0.0"
+description = "暗黑风格文件整理工具 - 支持分类、去重、批量重命名"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+dependencies = [
+    "PyQt6>=6.5",
+    "psutil>=5.9",
+]
+
+[project.scripts]
+file-organizer = "main:main"
+
+[tool.setuptools]
+py-modules = []
+packages = ["app"]

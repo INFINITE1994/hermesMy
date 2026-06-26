@@ -1,0 +1,22 @@
+[project]
+name = "ImageBatch"
+version = "1.0.0"
+description = "批量图片处理工具 - 支持批量调整大小、格式转换、压缩、重命名、水印、旋转翻转"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "ImageBatch"}
+]
+readme = "README.md"
+
+dependencies = [
+    "PyQt6>=6.4.0",
+    "Pillow>=10.0.0",
+]
+
+[project.scripts]
+imagebatch = "main:main"
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
