@@ -100,6 +100,27 @@ TOOLS = [
         "path": r"G:\hermesMy\TextTools",
         "color": "#1abc9c",
     },
+    {
+        "name": "UnitConverter",
+        "emoji": "📐",
+        "description": "单位换算\n长度/重量/温度/面积/体积/速度/数据/时间/货币",
+        "path": r"G:\hermesMy\UnitConverter",
+        "color": "#f39c12",
+    },
+    {
+        "name": "MarkdownEditor",
+        "emoji": "✏️",
+        "description": "Markdown编辑器\n实时预览/语法高亮/导出HTML/PDF",
+        "path": r"G:\hermesMy\MarkdownEditor",
+        "color": "#e74c3c",
+    },
+    {
+        "name": "DiskAnalyzer",
+        "emoji": "💾",
+        "description": "磁盘分析器\n树状图/文件类型分析/大文件查找",
+        "path": r"G:\hermesMy\DiskAnalyzer",
+        "color": "#2ecc71",
+    },
 ]
 
 # ─── Stylesheet ───

@@ -1,0 +1,14 @@
+[project]
+name = "DiskAnalyzer"
+version = "1.0.0"
+description = "磁盘空间分析器 - 可视化磁盘使用情况"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "PyQt6>=6.5",
+    "psutil>=5.9",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends._legacy:_Backend"

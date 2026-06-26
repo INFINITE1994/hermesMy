@@ -1,0 +1,36 @@
+[project]
+name = "markdown-editor"
+version = "1.0.0"
+description = "专业的 Markdown 编辑器 - 支持实时预览、数学公式、表格编辑、主题切换"
+authors = [{ name = "MarkdownEditor Team" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+readme = "README.md"
+keywords = ["markdown", "editor", "pyqt6", "latex", "math"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Text Editors",
+]
+dependencies = [
+    "PyQt6>=6.4.0",
+    "markdown>=3.4.0",
+    "Pygments>=2.14.0",
+    "PyQt6-WebEngine>=6.4.0",
+]
+
+[project.scripts]
+markdown-editor = "main:main"
+
+[project.urls]
+Homepage = "https://github.com/markdown-editor/MarkdownEditor"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"

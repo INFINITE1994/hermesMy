@@ -23,6 +23,9 @@
 | 📱 **QRCodeTool** | 二维码工具 | 生成/扫描/批量生成二维码 |
 | 🎨 **ColorPicker** | 取色器 | 屏幕取色/色轮/调色板/对比度检查 |
 | 📝 **TextTools** | 文本工具 | JSON格式化/Base64/URL编解码/哈希/正则 |
+| 📐 **UnitConverter** | 单位换算 | 长度/重量/温度/面积/体积/速度/数据/时间/货币 |
+| ✏️ **MarkdownEditor** | Markdown编辑器 | 实时预览/语法高亮/导出HTML/PDF |
+| 💾 **DiskAnalyzer** | 磁盘分析器 | 树状图/文件类型分析/大文件查找 |
 | 🧰 **ToolBox** | 工具箱启动器 | 一键启动所有工具的统一入口 |
 
 ## 🚀 快速开始
