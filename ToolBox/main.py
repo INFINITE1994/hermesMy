@@ -268,6 +268,27 @@ TOOLS = [
         "path": r"G:\hermesMy\DiskCleanup",
         "color": "#f44336",
     },
+    {
+        "name": "ScreenRecorder",
+        "emoji": "🎥",
+        "description": "屏幕录制\n全屏/区域/窗口录制/标注/导出MP4/GIF",
+        "path": r"G:\hermesMy\ScreenRecorder",
+        "color": "#e91e63",
+    },
+    {
+        "name": "BackupTool",
+        "emoji": "💾",
+        "description": "备份工具\n文件备份/增量备份/定时备份/加密/压缩",
+        "path": r"G:\hermesMy\BackupTool",
+        "color": "#607d8b",
+    },
+    {
+        "name": "AutomationTool",
+        "emoji": "🤖",
+        "description": "自动化工具\n宏录制/任务调度/文件监控/热键/自动点击",
+        "path": r"G:\hermesMy\AutomationTool",
+        "color": "#ff5722",
+    },
 ]
 
 # ─── Stylesheet ───

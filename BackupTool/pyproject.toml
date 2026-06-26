@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "BackupTool"
+version = "1.0.0"
+description = "专业数据备份工具 - 支持增量备份、定时备份、加密压缩、云同步"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "BackupTool Team"}]
+
+dependencies = [
+    "PyQt6>=6.5.0",
+    "psutil>=5.9.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pyinstaller>=6.0"]
+
+[project.scripts]
+backuptool = "main:main"
