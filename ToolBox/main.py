@@ -58,6 +58,27 @@ TOOLS = [
         "path": r"G:\hermesMy\QuickNote",
         "color": "#ff6b6b",
     },
+    {
+        "name": "PasswordManager",
+        "emoji": "🔐",
+        "description": "密码管理器\nAES-256加密、密码生成、分类管理",
+        "path": r"G:\hermesMy\PasswordManager",
+        "color": "#2ecc71",
+    },
+    {
+        "name": "SysMonitor",
+        "emoji": "📊",
+        "description": "系统监控\nCPU/内存/磁盘/网络实时监控",
+        "path": r"G:\hermesMy\SysMonitor",
+        "color": "#e74c3c",
+    },
+    {
+        "name": "NetTools",
+        "emoji": "🌐",
+        "description": "网络工具箱\nPing/端口扫描/DNS/测速/路由追踪",
+        "path": r"G:\hermesMy\NetTools",
+        "color": "#3498db",
+    },
 ]
 
 # ─── Stylesheet ───

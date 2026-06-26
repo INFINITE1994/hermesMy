@@ -17,6 +17,9 @@
 | 📁 **FileOrganizer** | 文件整理 | 自动分类、查找重复、批量重命名 |
 | 📋 **ClipboardManager** | 剪贴板管理 | 记录历史、搜索、置顶、分类 |
 | 📝 **QuickNote** | 快速笔记 | Markdown编辑、笔记本、标签、导出 |
+| 🔐 **PasswordManager** | 密码管理 | AES-256加密、密码生成、分类管理 |
+| 📊 **SysMonitor** | 系统监控 | CPU/内存/磁盘/网络实时监控 |
+| 🌐 **NetTools** | 网络工具 | Ping/端口扫描/DNS/测速/路由追踪 |
 | 🧰 **ToolBox** | 工具箱启动器 | 一键启动所有工具的统一入口 |
 
 ## 🚀 快速开始

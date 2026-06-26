@@ -1,0 +1,23 @@
+[project]
+name = "PasswordManager"
+version = "1.0.0"
+description = "安全的本地密码管理器 - AES-256加密"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "PasswordManager Team"}]
+
+dependencies = [
+    "PyQt6>=6.5.0",
+    "cryptography>=41.0.0",
+]
+
+[project.scripts]
+password-manager = "main:main"
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[tool.setuptools]
+py-modules = []

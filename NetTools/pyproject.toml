@@ -1,0 +1,23 @@
+[project]
+name = "nettools"
+version = "1.0.0"
+description = "网络工具箱 - 集成多种常用网络诊断工具的桌面应用"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "NetTools Team"}
+]
+
+dependencies = [
+    "PyQt6>=6.5.0",
+    "psutil>=5.9.0",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+nettools = "main:main"
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"

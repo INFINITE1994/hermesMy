@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "sysmonitor"
+version = "1.0.0"
+description = "系统监控仪表板 - 实时监控 CPU、内存、磁盘、网络"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "SysMonitor Team"}
+]
+keywords = ["system", "monitor", "dashboard", "pyqt6", "psutil"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Monitoring",
+]
+dependencies = [
+    "PyQt6>=6.5.0",
+    "psutil>=5.9.0",
+    "pyqtgraph>=0.13.0",
+]
+
+[project.scripts]
+sysmonitor = "main:main"
+
+[project.optional-dependencies]
+dev = [
+    "pyinstaller>=6.0.0",
+]
