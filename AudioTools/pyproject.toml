@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "audiotools"
+version = "1.0.0"
+description = "AudioTools - 音频处理工具箱"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "AudioTools Team"}
+]
+
+dependencies = [
+    "PyQt6>=6.5.0",
+    "pydub>=0.25.1",
+    "sounddevice>=0.4.6",
+    "numpy>=1.24.0",
+    "soundfile>=0.12.1",
+]
+
+[project.scripts]
+audiotools = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]

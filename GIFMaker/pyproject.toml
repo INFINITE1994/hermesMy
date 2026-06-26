@@ -1,0 +1,28 @@
+[project]
+name = "gifmaker"
+version = "1.0.0"
+description = "GIF Maker - 专业的 GIF 制作与编辑工具"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "GIFMaker Team" }]
+dependencies = [
+    "PyQt6>=6.5",
+    "Pillow>=10.0",
+    "imageio>=2.31",
+    "imageio-ffmpeg>=0.4",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pyinstaller>=6.0"]
+
+[project.scripts]
+gifmaker = "gifmaker.main:main"
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[tool.setuptools.packages.find]
+where = ["."]

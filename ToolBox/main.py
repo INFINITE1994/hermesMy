@@ -121,6 +121,27 @@ TOOLS = [
         "path": r"G:\hermesMy\DiskAnalyzer",
         "color": "#2ecc71",
     },
+    {
+        "name": "GIFMaker",
+        "emoji": "🎬",
+        "description": "GIF制作工具\n视频转GIF/图片合成/屏幕录制/编辑优化",
+        "path": r"G:\hermesMy\GIFMaker",
+        "color": "#e91e63",
+    },
+    {
+        "name": "AudioTools",
+        "emoji": "🎵",
+        "description": "音频工具箱\n格式转换/裁剪/合并/音量调节/录制",
+        "path": r"G:\hermesMy\AudioTools",
+        "color": "#ff9800",
+    },
+    {
+        "name": "RegexTester",
+        "emoji": "🔍",
+        "description": "正则测试器\n实时匹配/常用模式/解释/保存",
+        "path": r"G:\hermesMy\RegexTester",
+        "color": "#9c27b0",
+    },
 ]
 
 # ─── Stylesheet ───
