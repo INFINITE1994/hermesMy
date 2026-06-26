@@ -163,6 +163,27 @@ TOOLS = [
         "path": r"G:\hermesMy\CryptoTools",
         "color": "#607d8b",
     },
+    {
+        "name": "VideoTools",
+        "emoji": "🎬",
+        "description": "视频工具箱\n格式转换/裁剪/合并/压缩/音频提取",
+        "path": r"G:\hermesMy\VideoTools",
+        "color": "#ff4081",
+    },
+    {
+        "name": "WebScraper",
+        "emoji": "🕷️",
+        "description": "网页抓取器\nURL抓取/链接提取/图片下载/批量抓取",
+        "path": r"G:\hermesMy\WebScraper",
+        "color": "#4caf50",
+    },
+    {
+        "name": "SystemInfo",
+        "emoji": "💻",
+        "description": "系统信息\nCPU/内存/磁盘/显卡/网络/主板详情",
+        "path": r"G:\hermesMy\SystemInfo",
+        "color": "#2196f3",
+    },
 ]
 
 # ─── Stylesheet ───

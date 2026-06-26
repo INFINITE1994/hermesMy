@@ -1,0 +1,30 @@
+[project]
+name = "video-tools"
+version = "1.0.0"
+description = "视频处理工具箱 - 集成视频格式转换、裁剪、合并、压缩等功能"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "VideoTools Team" }
+]
+dependencies = [
+    "PyQt6>=6.5.0",
+    "moviepy>=1.0.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pyinstaller>=5.0",
+]
+
+[project.scripts]
+videotools = "main:main"
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[tool.setuptools]
+py-modules = ["main"]
