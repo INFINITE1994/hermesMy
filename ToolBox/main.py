@@ -44,6 +44,20 @@ TOOLS = [
         "path": r"G:\hermesMy\FileOrganizer",
         "color": "#43e97b",
     },
+    {
+        "name": "ClipboardManager",
+        "emoji": "📋",
+        "description": "剪贴板管理器\n记录剪贴板历史、搜索、置顶、分类",
+        "path": r"G:\hermesMy\ClipboardManager",
+        "color": "#ffa500",
+    },
+    {
+        "name": "QuickNote",
+        "emoji": "📝",
+        "description": "快速笔记\nMarkdown编辑器、笔记本管理、标签、导出",
+        "path": r"G:\hermesMy\QuickNote",
+        "color": "#ff6b6b",
+    },
 ]
 
 # ─── Stylesheet ───

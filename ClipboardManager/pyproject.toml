@@ -1,0 +1,25 @@
+[project]
+name = "clipboard-manager"
+version = "1.0.0"
+description = "Windows 剪贴板历史管理器 - 记录、搜索、分类和快速粘贴"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "ClipboardManager"}
+]
+dependencies = [
+    "PyQt6>=6.5",
+    "keyboard>=0.13",
+    "Pillow>=9.0",
+]
+
+[project.scripts]
+clipboard-manager = "main:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[tool.setuptools]
+py-modules = ["main"]
