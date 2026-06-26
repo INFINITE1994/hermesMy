@@ -247,6 +247,27 @@ TOOLS = [
         "path": r"G:\hermesMy\FileConverter",
         "color": "#9c27b0",
     },
+    {
+        "name": "ClipboardHistory",
+        "emoji": "📋",
+        "description": "剪贴板历史\n文本/图片记录/搜索/收藏/分类",
+        "path": r"G:\hermesMy\ClipboardHistory",
+        "color": "#ff9800",
+    },
+    {
+        "name": "TextEditor",
+        "emoji": "📝",
+        "description": "文本编辑器\n多标签/语法高亮/行号/查找替换/小地图",
+        "path": r"G:\hermesMy\TextEditor",
+        "color": "#4caf50",
+    },
+    {
+        "name": "DiskCleanup",
+        "emoji": "🧹",
+        "description": "磁盘清理\n垃圾扫描/浏览器清理/注册表/重复文件",
+        "path": r"G:\hermesMy\DiskCleanup",
+        "color": "#f44336",
+    },
 ]
 
 # ─── Stylesheet ───

@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "texteditor"
+version = "1.0.0"
+description = "一个轻量级的代码编辑器，支持语法高亮、多标签页、代码缩略图等功能"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "TextEditor Team"}
+]
+keywords = ["editor", "text", "code", "pyqt6", "syntax-highlighting"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Text Editors",
+]
+dependencies = [
+    "PyQt6>=6.5.0",
+    "PyQt6-Qt6>=6.5.0",
+    "PyQt6-sip>=13.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pyinstaller>=6.0",
+]
+
+[project.scripts]
+texteditor = "main:main"
+
+[project.urls]
+Homepage = "https://github.com/texteditor/texteditor"
+
+[tool.setuptools]
+py-modules = []

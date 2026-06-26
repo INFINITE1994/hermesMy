@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "DiskCleanup"
+version = "1.0.0"
+description = "专业磁盘清理工具 - 释放磁盘空间，优化系统性能"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "DiskCleanup Team"}
+]
+dependencies = [
+    "PyQt6>=6.5.0",
+    "psutil>=5.9.0",
+]
+
+[project.scripts]
+diskcleanup = "main:main"
+
+[project.optional-dependencies]
+dev = [
+    "pyinstaller>=6.0",
+]
