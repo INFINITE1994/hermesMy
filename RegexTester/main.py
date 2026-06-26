@@ -283,6 +283,7 @@ class RegexTesterWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("RegexTester — 正则表达式测试工具")
+        self.setMinimumSize(800, 600)
         self.resize(1280, 860)
         self._saved_patterns: list[dict] = load_saved_patterns()
         self._match_timer = QTimer(self)

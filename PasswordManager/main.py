@@ -803,7 +803,7 @@ class LoginDialog(QDialog):
     
     def setup_ui(self):
         self.setWindowTitle("🔐 密码管理器 - 登录")
-        self.setFixedSize(400, 300)
+        self.setMinimumSize(400, 300)
         self.setStyleSheet(AppStyles.MAIN_STYLE)
         
         layout = QVBoxLayout(self)
@@ -1095,7 +1095,7 @@ class PasswordGeneratorDialog(QDialog):
     
     def setup_ui(self):
         self.setWindowTitle("🎲 密码生成器")
-        self.setFixedSize(450, 500)
+        self.setMinimumSize(450, 500)
         self.setStyleSheet(AppStyles.MAIN_STYLE)
         
         layout = QVBoxLayout(self)

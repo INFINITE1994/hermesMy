@@ -264,6 +264,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("WebScraper - 网页抓取工具")
+        self.setMinimumSize(800, 600)
         self.resize(1100, 750)
         self.current_html = ""
         self.current_url = ""

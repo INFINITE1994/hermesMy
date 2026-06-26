@@ -1278,7 +1278,7 @@ class SplashScreen(QWidget):
         super().__init__()
         self.setWindowFlags(Qt.WindowType.FramelessWindowHint | Qt.WindowType.WindowStaysOnTopHint)
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
-        self.setFixedSize(400, 300)
+        self.setMinimumSize(400, 300)
         
         # 居中显示
         screen = QApplication.primaryScreen().geometry()

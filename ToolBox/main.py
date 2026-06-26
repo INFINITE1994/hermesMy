@@ -362,6 +362,7 @@ QMainWindow {
 QWidget {
     background-color: #0a0a0a;
     color: #e0e0e0;
+    font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
 }
 QLabel {
     background: transparent;
@@ -397,7 +398,7 @@ class ToolCard(QFrame):
         super().__init__(parent)
         self.tool_info = tool_info
         self._hovered = False
-        self.setFixedSize(280, 240)
+        self.setMinimumSize(280, 240)
         self.setCursor(Qt.CursorShape.PointingHandCursor)
         self._setup_ui()
 

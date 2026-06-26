@@ -785,7 +785,7 @@ class FindReplaceDialog(QDialog):
 
     def _setup_ui(self):
         self.setWindowTitle("查找与替换")
-        self.setFixedSize(480, 200)
+        self.setMinimumSize(480, 200)
         self.setStyleSheet(f"""
             QDialog {{
                 background-color: {Theme.CARD_BG};
