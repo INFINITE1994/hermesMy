@@ -205,6 +205,27 @@ TOOLS = [
         "path": r"G:\hermesMy\Translator",
         "color": "#8bc34a",
     },
+    {
+        "name": "PomodoroTimer",
+        "emoji": "🍅",
+        "description": "番茄钟\n专注计时/任务管理/统计/网站屏蔽",
+        "path": r"G:\hermesMy\PomodoroTimer",
+        "color": "#f44336",
+    },
+    {
+        "name": "ColorPalette",
+        "emoji": "🎨",
+        "description": "配色板\nAI配色/图片提取/色彩和谐/趋势配色",
+        "path": r"G:\hermesMy\ColorPalette",
+        "color": "#9c27b0",
+    },
+    {
+        "name": "DownloadManager",
+        "emoji": "⬇️",
+        "description": "下载管理器\n多线程下载/队列管理/速度限制/批量下载",
+        "path": r"G:\hermesMy\DownloadManager",
+        "color": "#4caf50",
+    },
 ]
 
 # ─── Stylesheet ───

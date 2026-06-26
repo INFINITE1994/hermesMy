@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "PomodoroTimer"
+version = "1.0.0"
+description = "番茄钟计时器 - 专业专注时间管理工具"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "PomodoroTimer Developer"}
+]
+dependencies = [
+    "PyQt6>=6.5.0",
+    "PyQt6-Qt6>=6.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pyinstaller>=5.0",
+]
+
+[project.scripts]
+pomodoro = "main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

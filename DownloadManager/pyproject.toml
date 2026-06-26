@@ -1,0 +1,33 @@
+[project]
+name = "download-manager"
+version = "1.0.0"
+description = "专业多线程下载管理器 - Professional Multi-threaded Download Manager"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Hermes Agent"}
+]
+keywords = ["download", "manager", "pyqt6", "multi-threaded"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = [
+    "PyQt6>=6.5",
+    "requests>=2.28",
+]
+
+[project.scripts]
+download-manager = "main:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends._legacy:_Backend"
