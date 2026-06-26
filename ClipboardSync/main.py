@@ -30,7 +30,7 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtCore import (
     Qt, QTimer, QThread, pyqtSignal, QSize, QPropertyAnimation,
     QEasingCurve, QPoint, QRect, QSettings, QMimeData, QUrl,
-    QStandardPaths, QObject, QClipboard
+    QStandardPaths, QObject
 )
 from PyQt6.QtGui import (
     QIcon, QPixmap, QPainter, QColor, QBrush, QPen, QFont,

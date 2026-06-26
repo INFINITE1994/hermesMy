@@ -331,6 +331,27 @@ TOOLS = [
         "path": r"G:\hermesMy\BatteryMonitor",
         "color": "#8bc34a",
     },
+    {
+        "name": "ScreenMagnifier",
+        "emoji": "🔍",
+        "description": "屏幕放大镜\n放大/取色/标尺/十字线/网格",
+        "path": r"G:\hermesMy\ScreenMagnifier",
+        "color": "#ff9800",
+    },
+    {
+        "name": "DiskSpaceAnalyzer",
+        "emoji": "📊",
+        "description": "磁盘空间分析\n树状图/旭日图/文件类型/大文件/旧文件",
+        "path": r"G:\hermesMy\DiskSpaceAnalyzer",
+        "color": "#00bcd4",
+    },
+    {
+        "name": "TextToSpeech",
+        "emoji": "🔊",
+        "description": "语音合成\n文本转语音/批量转换/保存音频/热键",
+        "path": r"G:\hermesMy\TextToSpeech",
+        "color": "#e91e63",
+    },
 ]
 
 # ─── Stylesheet ───

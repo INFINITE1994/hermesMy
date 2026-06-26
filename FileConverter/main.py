@@ -1014,6 +1014,15 @@ class ConvertPage(QWidget):
         
         right_layout.addWidget(output_group)
         
+        # 质量设置
+        self.quality_group = QGroupBox("质量设置")
+        quality_layout = QVBoxLayout(self.quality_group)
+        self.quality_spin = QSpinBox()
+        self.quality_spin.setRange(1, 100)
+        self.quality_spin.setValue(95)
+        quality_layout.addWidget(self.quality_spin)
+        right_layout.addWidget(self.quality_group)
+        
         # 预览区域
         preview_group = QGroupBox("预览")
         preview_layout = QVBoxLayout(preview_group)
@@ -1157,21 +1166,7 @@ class ImageConvertPage(ConvertPage):
     
     def __init__(self, parent=None):
         super().__init__("🖼️ 图片转换", IMAGE_FORMATS, parent)
-        
-        # 添加图片质量选项
-        quality_group = QGroupBox("图片质量")
-        quality_layout = QVBoxLayout(quality_group)
-        
-        quality_label = QLabel("质量 (1-100):")
-        quality_layout.addWidget(quality_label)
-        
-        self.quality_spin = QSpinBox()
-        self.quality_spin.setRange(1, 100)
-        self.quality_spin.setValue(95)
-        quality_layout.addWidget(self.quality_spin)
-        
-        # 插入到右侧设置区域
-        self.layout().itemAt(1).layout().itemAt(1).widget().layout().insertWidget(2, quality_group)
+        self.quality_group.setTitle("图片质量")
 
 
 class AudioConvertPage(ConvertPage):
@@ -1179,21 +1174,14 @@ class AudioConvertPage(ConvertPage):
     
     def __init__(self, parent=None):
         super().__init__("🎵 音频转换", AUDIO_FORMATS, parent)
-        
-        # 添加音频比特率选项
-        bitrate_group = QGroupBox("音频质量")
-        bitrate_layout = QVBoxLayout(bitrate_group)
-        
-        bitrate_label = QLabel("比特率:")
-        bitrate_layout.addWidget(bitrate_label)
+        self.quality_group.setTitle("音频质量")
+        self.quality_spin.hide()
         
         self.bitrate_combo = QComboBox()
         self.bitrate_combo.addItems(['128k', '192k', '256k', '320k'])
         self.bitrate_combo.setCurrentText('320k')
-        bitrate_layout.addWidget(self.bitrate_combo)
-        
-        # 插入到右侧设置区域
-        self.layout().itemAt(1).layout().itemAt(1).widget().layout().insertWidget(2, bitrate_group)
+        self.quality_group.layout().addWidget(QLabel("比特率:"))
+        self.quality_group.layout().addWidget(self.bitrate_combo)
 
 
 class VideoConvertPage(ConvertPage):
@@ -1201,21 +1189,14 @@ class VideoConvertPage(ConvertPage):
     
     def __init__(self, parent=None):
         super().__init__("🎬 视频转换", VIDEO_FORMATS, parent)
-        
-        # 添加视频比特率选项
-        bitrate_group = QGroupBox("视频质量")
-        bitrate_layout = QVBoxLayout(bitrate_group)
-        
-        bitrate_label = QLabel("比特率:")
-        bitrate_layout.addWidget(bitrate_label)
+        self.quality_group.setTitle("视频质量")
+        self.quality_spin.hide()
         
         self.bitrate_combo = QComboBox()
         self.bitrate_combo.addItems(['2000k', '4000k', '8000k', '12000k', '16000k'])
         self.bitrate_combo.setCurrentText('8000k')
-        bitrate_layout.addWidget(self.bitrate_combo)
-        
-        # 插入到右侧设置区域
-        self.layout().itemAt(1).layout().itemAt(1).widget().layout().insertWidget(2, bitrate_group)
+        self.quality_group.layout().addWidget(QLabel("比特率:"))
+        self.quality_group.layout().addWidget(self.bitrate_combo)
 
 
 class DocumentConvertPage(ConvertPage):

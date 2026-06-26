@@ -319,21 +319,6 @@ class ClipDatabase:
             CREATE INDEX IF NOT EXISTS idx_clips_pinned ON clips(is_pinned);
             CREATE INDEX IF NOT EXISTS idx_clips_category ON clips(category);
             CREATE INDEX IF NOT EXISTS idx_clips_created ON clips(created_at);
-            CREATE VIRTUAL TABLE IF NOT EXISTS clips_fts USING fts4(
-                content, content='clips', content_rowid='id'
-            );
-            CREATE TRIGGER IF NOT EXISTS clips_ai AFTER INSERT ON clips BEGIN
-                INSERT INTO clips_fts(rowid, content) VALUES (new.id, new.content);
-            END;
-            CREATE TRIGGER IF NOT EXISTS clips_ad AFTER DELETE ON clips BEGIN
-                INSERT INTO clips_fts(clips_fts, rowid, content)
-                    VALUES('delete', old.id, old.content);
-            END;
-            CREATE TRIGGER IF NOT EXISTS clips_au AFTER UPDATE ON clips BEGIN
-                INSERT INTO clips_fts(clips_fts, rowid, content)
-                    VALUES('delete', old.id, old.content);
-                INSERT INTO clips_fts(rowid, content) VALUES (new.id, new.content);
-            END;
         """)
         self.conn.commit()
 
@@ -369,28 +354,14 @@ class ClipDatabase:
         if not query.strip():
             return self.get_clips(category=category, pinned_only=pinned_only)
 
-        try:
-            # Try FTS first
-            terms = query.strip().split()
-            fts_query = " OR ".join(f'"{t}"' for t in terms if t)
-            rows = self.conn.execute(
-                "SELECT c.id, c.content, c.category, c.is_pinned, c.is_image, "
-                "c.image_data, c.image_thumbnail, c.created_at, c.use_count "
-                "FROM clips c JOIN clips_fts f ON c.id = f.rowid "
-                "WHERE clips_fts MATCH ? "
-                "ORDER BY c.is_pinned DESC, c.created_at DESC LIMIT 200",
-                (fts_query,)
-            ).fetchall()
-        except Exception:
-            # Fallback to LIKE
-            like = f"%{query}%"
-            rows = self.conn.execute(
-                "SELECT id, content, category, is_pinned, is_image, "
-                "image_data, image_thumbnail, created_at, use_count "
-                "FROM clips WHERE content LIKE ? "
-                "ORDER BY is_pinned DESC, created_at DESC LIMIT 200",
-                (like,)
-            ).fetchall()
+        like = f"%{query}%"
+        rows = self.conn.execute(
+            "SELECT id, content, category, is_pinned, is_image, "
+            "image_data, image_thumbnail, created_at, use_count "
+            "FROM clips WHERE content LIKE ? "
+            "ORDER BY is_pinned DESC, created_at DESC LIMIT 200",
+            (like,)
+        ).fetchall()
 
         return [self._row_to_dict(r) for r in rows]
 

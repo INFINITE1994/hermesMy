@@ -360,7 +360,7 @@ class RegexTesterWindow(QMainWindow):
         self.test_input.setPlaceholderText("输入要测试的文本…")
         self.test_input.setObjectName("testInput")
         self.test_input.textChanged.connect(self._schedule_match)
-        self.highlighter = RegexHighlighter(self.regex_input.document())
+        self.highlighter = RegexHighlighter(self.test_input.document())
         test_inner.addWidget(self.test_input)
         test_group.setLayout(test_inner)
         left_layout.addWidget(test_group, 1)

@@ -1092,10 +1092,10 @@ class QuickNoteWindow(QMainWindow):
 
         # 文件菜单
         file_menu = menubar.addMenu("文件(&F)")
-        file_menu.addAction("新建笔记", self._new_note, QKeySequence.StandardKey.New)
+        file_menu.addAction("新建笔记", self._new_note)
         file_menu.addAction("新建笔记本", self._new_notebook)
         file_menu.addSeparator()
-        file_menu.addAction("保存", self._save_note, QKeySequence.StandardKey.Save)
+        file_menu.addAction("保存", self._save_note)
         file_menu.addSeparator()
 
         # 导出子菜单
@@ -1106,33 +1106,33 @@ class QuickNoteWindow(QMainWindow):
         export_menu.addAction("导出为 PDF", lambda: self._export_note("pdf"))
 
         file_menu.addSeparator()
-        file_menu.addAction("退出", self.close, QKeySequence.StandardKey.Quit)
+        file_menu.addAction("退出", self.close)
 
         # 编辑菜单
         edit_menu = menubar.addMenu("编辑(&E)")
-        edit_menu.addAction("撤销", self._undo, QKeySequence.StandardKey.Undo)
-        edit_menu.addAction("重做", self._redo, QKeySequence.StandardKey.Redo)
+        edit_menu.addAction("撤销", self._undo)
+        edit_menu.addAction("重做", self._redo)
         edit_menu.addSeparator()
-        edit_menu.addAction("剪切", self._cut, QKeySequence.StandardKey.Cut)
-        edit_menu.addAction("复制", self._copy, QKeySequence.StandardKey.Copy)
-        edit_menu.addAction("粘贴", self._paste, QKeySequence.StandardKey.Paste)
+        edit_menu.addAction("剪切", self._cut)
+        edit_menu.addAction("复制", self._copy)
+        edit_menu.addAction("粘贴", self._paste)
         edit_menu.addSeparator()
-        edit_menu.addAction("查找", self._focus_search, QKeySequence.StandardKey.Find)
+        edit_menu.addAction("查找", self._focus_search)
 
         # 视图菜单
         view_menu = menubar.addMenu("视图(&V)")
-        view_menu.addAction("切换预览", self._toggle_preview, "Ctrl+P")
-        view_menu.addAction("切换主题", self._toggle_theme, "Ctrl+T")
+        view_menu.addAction("切换预览", self._toggle_preview)
+        view_menu.addAction("切换主题", self._toggle_theme)
         view_menu.addSeparator()
-        view_menu.addAction("放大", self._zoom_in, QKeySequence.StandardKey.ZoomIn)
-        view_menu.addAction("缩小", self._zoom_out, QKeySequence.StandardKey.ZoomOut)
+        view_menu.addAction("放大", self._zoom_in)
+        view_menu.addAction("缩小", self._zoom_out)
 
         # 笔记菜单
         note_menu = menubar.addMenu("笔记(&N)")
         note_menu.addAction("添加标签", self._add_tag_dialog)
         note_menu.addAction("重命名笔记", self._rename_note)
         note_menu.addSeparator()
-        note_menu.addAction("删除笔记", self._delete_note, QKeySequence.StandardKey.Delete)
+        note_menu.addAction("删除笔记", self._delete_note)
 
         # 帮助菜单
         help_menu = menubar.addMenu("帮助(&H)")

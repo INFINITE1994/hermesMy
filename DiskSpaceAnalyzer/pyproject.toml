@@ -1,0 +1,39 @@
+[project]
+name = "DiskSpaceAnalyzer"
+version = "1.0.0"
+description = "磁盘空间分析器 - 可视化分析磁盘使用情况"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Hermes Agent"}
+]
+keywords = ["disk", "space", "analyzer", "treemap", "sunburst", "pyqt6"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Filesystems",
+    "Topic :: Utilities",
+]
+
+dependencies = [
+    "PyQt6>=6.4.0",
+    "psutil>=5.9.0",
+]
+
+[project.scripts]
+diskspace = "main:main"
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[tool.setuptools]
+py-modules = ["main"]
+
