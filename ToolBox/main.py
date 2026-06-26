@@ -310,6 +310,27 @@ TOOLS = [
         "path": r"G:\hermesMy\SystemCleaner",
         "color": "#4caf50",
     },
+    {
+        "name": "ClipboardSync",
+        "emoji": "📋",
+        "description": "剪贴板同步\n跨设备同步/历史记录/搜索/加密",
+        "path": r"G:\hermesMy\ClipboardSync",
+        "color": "#00bcd4",
+    },
+    {
+        "name": "NetworkMonitor",
+        "emoji": "📡",
+        "description": "网络监控\n实时速度/流量统计/连接列表/带宽监控",
+        "path": r"G:\hermesMy\NetworkMonitor",
+        "color": "#ff9800",
+    },
+    {
+        "name": "BatteryMonitor",
+        "emoji": "🔋",
+        "description": "电池监控\n电池状态/健康/电源计划/充电历史/告警",
+        "path": r"G:\hermesMy\BatteryMonitor",
+        "color": "#8bc34a",
+    },
 ]
 
 # ─── Stylesheet ───
