@@ -1,0 +1,23 @@
+[project]
+name = "TextTools"
+version = "1.0.0"
+description = "文本处理工具箱 - 集成多种实用文本处理功能的桌面应用"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "TextTools Team"}
+]
+dependencies = [
+    "PyQt6>=6.4.0",
+]
+
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project.scripts]
+texttools = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]

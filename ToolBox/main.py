@@ -79,6 +79,27 @@ TOOLS = [
         "path": r"G:\hermesMy\NetTools",
         "color": "#3498db",
     },
+    {
+        "name": "QRCodeTool",
+        "emoji": "📱",
+        "description": "二维码工具\n生成/扫描/批量生成二维码",
+        "path": r"G:\hermesMy\QRCodeTool",
+        "color": "#9b59b6",
+    },
+    {
+        "name": "ColorPicker",
+        "emoji": "🎨",
+        "description": "取色器\n屏幕取色/色轮/调色板/对比度检查",
+        "path": r"G:\hermesMy\ColorPicker",
+        "color": "#e67e22",
+    },
+    {
+        "name": "TextTools",
+        "emoji": "📝",
+        "description": "文本工具箱\nJSON格式化/Base64/URL编解码/哈希/正则",
+        "path": r"G:\hermesMy\TextTools",
+        "color": "#1abc9c",
+    },
 ]
 
 # ─── Stylesheet ───

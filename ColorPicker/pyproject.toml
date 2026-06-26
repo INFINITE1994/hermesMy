@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "ColorPicker"
+version = "1.0.0"
+description = "专业色彩拾取与调色板工具 - PyQt6 桌面应用"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "ColorPicker Team"}
+]
+dependencies = [
+    "PyQt6>=6.5.0",
+]
+
+[project.scripts]
+colorpicker = "main:main"
+
+[project.gui-scripts]
+colorpicker = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]

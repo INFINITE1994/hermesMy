@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "QRCodeTool"
+version = "1.0.0"
+description = "专业二维码生成与识别工具 - PyQt6桌面应用"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "QRCodeTool Team"}
+]
+keywords = ["qrcode", "pyqt6", "desktop", "tool"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Multimedia :: Graphics",
+]
+dependencies = [
+    "PyQt6>=6.5.0",
+    "qrcode[pil]>=7.4",
+    "Pillow>=10.0.0",
+    "opencv-python>=4.8.0",
+    "numpy>=1.24.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pyinstaller>=6.0",
+    "pytest>=7.0",
+]
+
+[project.scripts]
+qrcodetool = "main:main"
+
+[tool.setuptools]
+packages = ["."]
